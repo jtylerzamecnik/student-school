@@ -11,7 +11,11 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://user:cmst335@ds151463.mlab.com:51463/studentschool';
+//var mongoDB = 'mongodb://user:cmst335@ds151463.mlab.com:51463/studentschool';
+
+var mongoDB = 'mongodb://paul:puglife11@ds157503.mlab.com:57503/student_school';
+
+
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
